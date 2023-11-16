@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/Home";
 import AppliedJob from "../pages/AppliedJob";
+import loader from "../loader/loader";
 
 const router = createBrowserRouter([
   {
@@ -10,7 +11,8 @@ const router = createBrowserRouter([
     children:[
         {
             path:'/',
-            element:<Home/>
+            element:<Home/>,
+            loader:loader
         },
         {
           path:'applied_job',

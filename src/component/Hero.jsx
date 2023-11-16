@@ -10,7 +10,7 @@ const Hero = () => {
           One Step Closer To Your
           <span className="text-sky-500 ms-2">Dream Job</span>
         </h1>
-        <p className="text-sm lg:text-base text-gray-500">
+        <p className="p">
           Explore thousands of job opportunities with all the information you
           need. Its your future. Come find it. Manage all your job application
           from start to finish.
