@@ -5,7 +5,9 @@ import Footer from "./component/Footer";
 function App() {
   return (
     <>
-      <Header />
+      <div className="bg-slate-100">
+        <Header />
+      </div>
       <Outlet />
       <Footer />
     </>
