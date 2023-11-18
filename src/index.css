@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer components {
   .container {
     @apply w-screen max-w-6xl mx-auto px-[3%];
@@ -14,4 +15,9 @@
   .h2 {
     @apply text-2xl lg:text-4xl font-bold;
   }
+  .btn-outline {
+    @apply px-3 py-2 text-blue-300 font-bold border-2 border-blue-300 rounded-md;
+  }
 }
+
+
