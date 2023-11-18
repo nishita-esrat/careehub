@@ -36,7 +36,7 @@ const Home = () => {
         </div>
       </div>
       {/* job section */}
-      <div className="container my-14 flex flex-col items-center ">
+      <div className="container mt-14 mb-5 flex flex-col items-center ">
         <h2 className="h2">Featured Jobs</h2>
         <p className="p my-4 text-center">
           Explore thousands of job opportunities with all the information you
