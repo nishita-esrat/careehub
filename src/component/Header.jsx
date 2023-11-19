@@ -6,7 +6,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="container flex justify-between items-center py-9 relative">
-      <div className="text-2xl font-bold md:text-3xl">CareeHub</div>
+      <Link to='/' className="text-2xl font-bold md:text-3xl">CareeHub</Link>
       <div>
         <ul className="hidden md:flex items-center gap-6 ">
           <li>

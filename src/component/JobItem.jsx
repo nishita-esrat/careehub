@@ -33,7 +33,7 @@ const JobItem = ({ job }) => {
           Salary:{salary}
         </p>
       </div>
-      <Link className="btn">view details</Link>
+      <Link to={`/job_details/${id}`} className="btn">view details</Link>
     </div>
   );
 };

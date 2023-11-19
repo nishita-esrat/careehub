@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Hero from "../component/Hero";
+import Header from "../component/Header";
 import { useLoaderData } from "react-router-dom";
 import Categories from "../component/Categories";
 import JobItem from "../component/JobItem";
@@ -19,6 +20,7 @@ const Home = () => {
     <>
     {/* hero section */}
       <div className="bg-slate-100">
+        <Header/>
         <Hero />
       </div>
       {/* categori section */}
