@@ -4,6 +4,7 @@ import calendarPic from "../assets/images/calendar.png";
 import phonePic from "../assets/images/phone.png";
 import locationPic from "../assets/images/location.png";
 import emailPic from "../assets/images/email.png";
+import { applyJob } from "../utilities";
 
 const JobSingle = ({ item }) => {
   const {
@@ -21,9 +22,13 @@ const JobSingle = ({ item }) => {
     experiences,
     contact_information,
   } = item;
+  // apply job part
+  const job_apply = (id) => {
+    applyJob(id);
+  };
   return (
     <>
-    {/* left side */}
+      {/* left side */}
       <div>
         <p className="p">
           <span className="font-semibold text-black">Job Description:</span>
@@ -85,7 +90,9 @@ const JobSingle = ({ item }) => {
             <span className="p">{contact_information.address}</span>
           </p>
         </div>
-        <button className="btn mt-5">apply now</button>
+        <button className="btn mt-5" onClick={() => job_apply(id)}>
+          apply now
+        </button>
       </div>
     </>
   );
