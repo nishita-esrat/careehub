@@ -1,10 +1,15 @@
-
-import React from 'react'
+import React from "react";
+import { CommonHero } from "../component/CommonHero";
+import { useLoaderData } from "react-router-dom";
 
 const AppliedJob = () => {
+  const applyJobs =useLoaderData()
+  console.log(applyJobs)
   return (
-    <div>AppliedJob</div>
-  )
-}
+    <>
+      <CommonHero>applied job</CommonHero>
+    </>
+  );
+};
 
-export default AppliedJob
+export default AppliedJob;

@@ -11,7 +11,7 @@ const JobDetails = () => {
   return (
     <>
     <CommonHero>Job Details</CommonHero>
-    <div className=' container pt-5 pb-7 grid grid-cols-1 lg:grid-cols-2 gap-9'>
+    <div className=' container pt-9 pb-7 grid grid-cols-1 lg:grid-cols-2 gap-9'>
        <JobSingle item={job}/>
     </div>
     </>

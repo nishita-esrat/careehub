@@ -1,4 +1,6 @@
 
+
+// applying job
 const applyJob = (id)=>{
  // check local storage
  let storedJobItems = {};
@@ -13,4 +15,6 @@ const applyJob = (id)=>{
    localStorage.setItem("storedJobItems", JSON.stringify(storedJobItems));
  }
 }
+
+
 export {applyJob}
