@@ -10,12 +10,13 @@ const AppliedJob = () => {
   const [applyJob, setApplyJob] = useState(applyJobs);
   const [showFilter, setShowFilter] = useState(false);
   //  onsite job
-  const onsite = (applyJob, onsite_or_remote_title, setapplyJob) => {
-    onsiteOrRemoteJob(applyJob, onsite_or_remote_title, setapplyJob);
+  const onsite = async (applyJobs, onsite_or_remote_title,setApplyJob) => {
+  onsiteOrRemoteJob(applyJobs,onsite_or_remote_title,setApplyJob)
+
   };
   // remote job
-  const remote = (applyJob, onsite_or_remote_title, setapplyJob) => {
-    onsiteOrRemoteJob(applyJob, onsite_or_remote_title, setapplyJob);
+  const remote = async(applyJobs, onsite_or_remote_title,setApplyJob) => {
+  onsiteOrRemoteJob(applyJobs,onsite_or_remote_title,setApplyJob)
   };
 
   return (
@@ -33,13 +34,13 @@ const AppliedJob = () => {
             <ul className="absolute top-[100%] left-0 p-4 shadow-md z-50 bg-slate-50 w-[100%] p mt-3 grid divide-y-2 divide-slate-300">
               <li
                 className="py-2 cursor-pointer"
-                onClick={() => remote(applyJob, "Remote", setApplyJob)}
+                onClick={() => remote(applyJobs, "Remote",setApplyJob)}
               >
                 remote job
               </li>
               <li
                 className="py-2 cursor-pointer"
-                onClick={() => onsite(applyJob, "Onsite", setApplyJob)}
+                onClick={() => onsite(applyJobs, "Onsite",setApplyJob)}
               >
                 onsite job
               </li>

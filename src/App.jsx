@@ -4,8 +4,8 @@ import Footer from "./component/Footer";
 function App() {
   return (
     <>
-    
-      <Outlet />
+     
+       <Outlet />
       <Footer />
     </>
   );

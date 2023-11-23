@@ -15,12 +15,11 @@ const applyJob = (id) => {
 };
 
 // checking onsite or remote job
-const onsiteOrRemoteJob = (applyJob, onsite_or_remote_title, setApplyJob) => {
-  const remoteOrOnsite = applyJob.filter(
+const onsiteOrRemoteJob = (applyJobs, onsite_or_remote_title, setApplyJob) => {
+  const remoteOrOnsite = applyJobs.filter(
     (item) => item.remote_or_onsite == onsite_or_remote_title
   );
   return setApplyJob(remoteOrOnsite);
-  
 };
 
 export { applyJob, onsiteOrRemoteJob };
