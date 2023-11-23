@@ -28,16 +28,6 @@ const Header = () => {
               Applied Jobs
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/blog"
-              className={({ isActive }) =>
-                isActive ? "text-sky-500 font-semibold" : "text-base"
-              }
-            >
-              Blog
-            </NavLink>
-          </li>
         </ul>
       </div>
       <div>
@@ -72,16 +62,6 @@ const Header = () => {
                   }
                 >
                   Applied Jobs
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/blog"
-                  className={({ isActive }) =>
-                    isActive ? "text-sky-500 font-semibold" : "text-base"
-                  }
-                >
-                  Blog
                 </NavLink>
               </li>
             </ul>

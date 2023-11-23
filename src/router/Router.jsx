@@ -6,6 +6,7 @@ import loader from "../loader/loader";
 import JobDetails from "../pages/JobDetails";
 import jobDetails from "../loader/jobDetailsLoader";
 import getAppliedJob from "../loader/appliedJob";
+import Statistics from "../pages/Statistics";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
           path:'applied_job',
           element:<AppliedJob/>,
           loader:getAppliedJob
+        },
+        {
+          path:'statistics',
+          element:<Statistics/>,
         }
     ]
   },
