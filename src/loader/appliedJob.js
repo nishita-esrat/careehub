@@ -5,16 +5,16 @@ const getAppliedJob = async () => {
   const jobsItems = await res.json();
   // check local storage
   let storedJobItems = {};
+  let applyJobs = [];
   let isStored = localStorage.getItem("storedJobItems");
   if (isStored) {
     storedJobItems = JSON.parse(isStored);
-    let applyJobs = [];
     for (const id in storedJobItems) {
       let item = jobsItems.find((item) => item.id == id);
       applyJobs.push(item);
     }
-    return applyJobs;
   }
+  return applyJobs;
 };
 
 export default getAppliedJob;

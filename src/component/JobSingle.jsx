@@ -5,6 +5,8 @@ import phonePic from "../assets/images/phone.png";
 import locationPic from "../assets/images/location.png";
 import emailPic from "../assets/images/email.png";
 import { applyJob } from "../utilities";
+import { toast } from "react-toastify";
+import { info } from "autoprefixer";
 
 const JobSingle = ({ item }) => {
   const {
@@ -24,7 +26,12 @@ const JobSingle = ({ item }) => {
   } = item;
   // apply job part
   const job_apply = (id) => {
-    applyJob(id);
+    const isApplied = applyJob(id);
+    if (isApplied == "done") {
+      toast.success(isApplied, {theme: "colored"});
+    } else {
+      toast.info(isApplied,{theme: "colored"});
+    }
   };
   return (
     <>
