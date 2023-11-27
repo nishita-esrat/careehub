@@ -12,7 +12,7 @@ const ErrorPage = () => {
         <h1 className='font-bold text-3xl'>Oops!</h1>
       <p>Sorry, an unexpected error has occurred.</p>
       <p className='text-lg font-semibold'>
-        <i>{ error.error.message}</i>
+        <i>{error.statusText || error.message}</i>
       </p>
     </div>
   )
