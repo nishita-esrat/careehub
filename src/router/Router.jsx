@@ -7,11 +7,13 @@ import JobDetails from "../pages/JobDetails";
 import jobDetails from "../loader/jobDetailsLoader";
 import getAppliedJob from "../loader/appliedJob";
 import Statistics from "../pages/Statistics";
+import ErrorPage from "../component/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement:<ErrorPage/>,
     children:[
         {
             path:'/',
