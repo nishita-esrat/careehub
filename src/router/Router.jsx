@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import AppliedJob from "../pages/AppliedJob";
 import loader from "../loader/loader";
 import JobDetails from "../pages/JobDetails";
-import jobDetails from "../loader/jobDetailsLoader";
+import jobDetail from "../loader/jobDetailsLoader";
 import getAppliedJob from "../loader/appliedJob";
 import Statistics from "../pages/Statistics";
 import ErrorPage from "../component/ErrorPage";
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         {
           path:'job_details/:id',
           element:<JobDetails/>,
-          loader:jobDetails
+          loader:jobDetail
         },
         {
           path:'applied_job',

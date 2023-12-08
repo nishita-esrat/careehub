@@ -6,7 +6,7 @@ import locationPic from "../assets/images/location.png";
 import emailPic from "../assets/images/email.png";
 import { applyJob } from "../utilities";
 import { toast } from "react-toastify";
-import { info } from "autoprefixer";
+
 
 const JobSingle = ({ item }) => {
   const {

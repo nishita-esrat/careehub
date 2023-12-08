@@ -1,7 +1,7 @@
 // get applied job
 const getAppliedJob = async () => {
   // first get data
-  const res = await fetch("./data/jobs.json");
+  const res = await fetch("data/jobs.json");
   const jobsItems = await res.json();
   // check local storage
   let storedJobItems = {};
